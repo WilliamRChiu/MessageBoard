@@ -1,0 +1,19 @@
+<html>
+    <h1>Index</h1>
+    <body>
+        <ul>
+            <% for (let i = 0; i < messages.length; i++) { %>
+                <%=messages[i].user%>
+                <br>
+                <%=messages[i].text%>
+                <br>
+                <%=messages[i].added%>
+                <br>
+                <a href="/message/<%= messages[i].user %>" class="button">Go to Example</a>
+                <br>
+
+            <% } %>
+
+        </ul>
+    </body>
+</html>

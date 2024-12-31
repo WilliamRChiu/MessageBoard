@@ -1,0 +1,31 @@
+<!-- views/form.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <!-- You can link your CSS files here -->
+    <link rel="stylesheet" href="/public/formStyle.css">
+</head>
+<body>
+    <h1>Post a New Message</h1>
+    <form method="POST" action="/new">
+        <!-- Author's Name Input -->
+        <div>
+            <label for="author">Author's Name:</label>
+            <input type="text" id="author" name="author" required>
+        </div>
+        
+        <!-- Message Text Input -->
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit Message</button>
+        </div>
+    </form>
+</body>
+</html>

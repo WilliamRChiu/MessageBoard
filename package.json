@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0"
+  },
+  "name": "messageboard",
+  "version": "1.0.0",
+  "description": "Message Board",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "run": "node --watch app.js"
+  },
+  "author": "WRC",
+  "license": "ISC"
+}
